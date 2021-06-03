@@ -224,11 +224,6 @@ window.onload = function(){
           clickable: true
       });
 
-      //点击标签时，将当前标签所在位置移动到地图中心并增大地图级别
-      qq.maps.event.addListener(label, "click", function(){
-          map.panTo(this.getPosition());
-          map.zoomBy(1);
-      });
     }
 
   }
